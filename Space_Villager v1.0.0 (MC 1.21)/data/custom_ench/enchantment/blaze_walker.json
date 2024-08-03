@@ -1,0 +1,106 @@
+{
+    "description": "Passos Flamejantes",
+    "supported_items": "#minecraft:foot_armor",
+    "slots": ["armor"],
+    "weight": 1,
+    "anvil_cost": 1,
+    "min_cost": {
+        "base": 1,
+        "per_level_above_first": 2
+    },
+    "max_cost": {
+        "base": 10,
+        "per_level_above_first": 2
+    },
+    "max_level": 2,
+    "effects": {
+        "minecraft:location_changed":[
+            {
+                "effect": {
+                    "type": "minecraft:replace_disk",
+                    "block_state": {
+                        "type": "weighted_state_provider",
+                        "entries": [
+                            {
+                                "data": {
+                                    "Name": "smooth_basalt"
+                                },
+                                "weight": 9
+                            }
+                        ]
+                    },
+                    "height": 1.0,
+                    "offset": [
+                        0,
+                        -1,
+                        0
+                    ],
+                    "predicate": {
+                        "type": "all_of",
+                        "predicates": [
+                            {
+                                "type": "matching_blocks",
+                                "blocks": "air",
+                                "offset": [
+                                    0,
+                                    1,
+                                    0
+                                ]
+                            },
+                            {
+                                "type": "matching_fluids",
+                                "fluids": "lava"
+                            },
+                            {
+                                "type": "unobstructed"
+                            }
+                        ]
+                    },
+                    "radius": {
+                        "type": "minecraft:clamped",
+                        "max": 16.0,
+                        "min": 0.0,
+                        "value": {
+                            "type": "minecraft:linear",
+                            "base": 1.0,
+                            "per_level_above_first": 1.0
+                        }
+                    }
+                },
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "flags": {
+                            "is_on_ground": true
+                        }
+                    }
+                }
+            },
+            {
+                "effect": {
+                    "type": "run_function",
+                    "function": "custom_ench:blaze_walker_end"
+                }
+            }
+        ],
+        "minecraft:tick": [
+            {
+                "effect": {
+                    "type": "run_function",
+                    "function": "custom_ench:blaze_walker_stop"
+                },
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "movement": {
+                            "speed": 0
+                        } 
+                    }
+                }
+            }
+
+        ]
+    }
+}

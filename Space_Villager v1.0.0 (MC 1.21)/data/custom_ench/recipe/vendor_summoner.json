@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "/#/",
+        "#i#",
+        "/#/"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:end_stone"
+        },
+        "/": {
+            "item": "minecraft:emerald"
+        },
+        "i": {
+            "item": "minecraft:nether_star"
+        }
+    },
+    "result": {
+        "id": "minecraft:brick",
+        "components": {
+            "minecraft:food": {
+                "nutrition": 0,
+                "saturation": 0,
+                "can_always_eat": true,
+                "eat_seconds": 1000
+            },
+            "minecraft:custom_model_data": 912002,
+            "minecraft:custom_name": "{\"text\":\"Cristal Lunar\",\"italic\":false,\"color\":\"gold\",\"bold\":true}",
+            "minecraft:lore": [
+              "{\"text\":\"Use esse item para invocar um homem que te aguarda no céu\",\"color\":\"blue\",\"italic\":false}",
+              "{\"text\":\"🎵'Sempre estar lá, e ver ele voltar...'🎵\",\"color\":\"dark_purple\",\"italic\":true}"
+            ]
+        }
+    }
+}

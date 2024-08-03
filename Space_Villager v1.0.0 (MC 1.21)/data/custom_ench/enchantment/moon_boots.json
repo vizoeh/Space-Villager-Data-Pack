@@ -1,0 +1,37 @@
+{
+    "description": "Gravidade Lunar",
+    "supported_items": "#foot_armor",
+    "exclusive_set": "minecraft:feather_falling",
+    "slots": ["feet"],
+    "weight": 1,
+    "anvil_cost": 1,
+    "min_cost": {
+        "base": 1,
+        "per_level_above_first": 2
+    },
+    "max_cost": {
+        "base": 10,
+        "per_level_above_first": 2
+    },
+    "max_level": 1,
+
+    "effects": {
+        "attributes": [{
+            "attribute": "generic.gravity",
+            "id": "moon_boots_gravity",
+            "amount": -0.06,
+            "operation": "add_value" 
+        },{
+            "attribute": "generic.fall_damage_multiplier",
+            "id": "moond_boots_fall_damage",
+            "amount": -0.75,
+            "operation": "add_value"
+        },
+        {
+            "attribute": "generic.safe_fall_distance",
+            "id": "moond_boots_safe_fall",
+            "amount": 2,
+            "operation": "add_value"
+        }]
+    }
+}

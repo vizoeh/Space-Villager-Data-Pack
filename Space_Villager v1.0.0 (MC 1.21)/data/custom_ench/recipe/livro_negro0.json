@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+      "///",
+      "#i/",
+      "###"
+  ],
+  "key": {
+      "/": {
+          "item": "minecraft:gold_nugget"
+      },
+      "i": {
+          "item": "minecraft:book"
+      },
+      "#": {
+          "item": "minecraft:netherite_scrap"
+      }
+  },
+  "result": {
+      "id": "minecraft:book",
+      "count": 1,
+      "components": {
+          "minecraft:custom_model_data": 912000,
+          "minecraft:custom_name": "{\"text\":\"Livro Negro\",\"italic\":false,\"color\":\"dark_purple\",\"bold\":true}",
+          "minecraft:lore": [
+            "{\"text\":\"Item de Troca\",\"color\":\"blue\",\"italic\":false}"
+        ]
+      }
+  }
+}
