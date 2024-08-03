@@ -8,7 +8,9 @@ scoreboard objectives add BlazeWalkTime dummy
 scoreboard objectives add BlazeWalkMaxTime dummy
 scoreboard objectives add DoubleJumpCooldown dummy
 scoreboard objectives add DoubleJump dummy
+
 scoreboard players set @a BlazeWalkMaxTime 20
+scoreboard players set @a DoubleJumpCooldown 1
 
 
 tellraw @a "The Datapack has loaded :)"

@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:book"
+        },
+        {
+            "item": "minecraft:netherite_ingot"
+        }
+    ],
+    "result": {
+        "id": "minecraft:book",
+        "count": 1,
+        "components": {
+            "minecraft:custom_model_data": 912000,
+            "minecraft:custom_name": "{\"text\":\"Livro de Netherite\",\"italic\":false,\"color\":\"dark_purple\",\"bold\":true}",
+            "minecraft:lore": [
+              "{\"text\":\"Item de Troca\",\"color\":\"blue\",\"italic\":false}"
+          ]
+        }
+    }
+}
