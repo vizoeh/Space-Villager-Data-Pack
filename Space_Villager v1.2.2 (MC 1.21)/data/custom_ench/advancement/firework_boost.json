@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "components": {
+                        "custom_model_data": 912103
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "custom_ench:firework_boost"
+    }
+}

@@ -11,5 +11,7 @@ scoreboard objectives add DoubleJump dummy
 
 scoreboard objectives add stepsMedusaRay dummy
 
+scoreboard objectives add fireworkBoostCooldown dummy
+scoreboard objectives add fireworkWait dummy
 
 tellraw @a "The Datapack has loaded :)"
